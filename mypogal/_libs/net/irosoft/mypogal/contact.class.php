@@ -1,0 +1,8 @@
+<?php
+/**
+ * MyPogal
+ * @author iroSOFT
+ */
+
+eval(gzinflate(base64_decode('DdBHkptAAADA53i3OBBELJcPDCCCRE4rLq4hMyJHwevtfkIXO2y/qqvpyxauxVcKl4Kl/+ZFNuTF168y1ww0GaIoyu5FdRYgwPDWAlbU5wXSatMe7xbA5xKlz5DkhZrbTe15a4dzGy0fbtQk25KFZNkHAcbYyGNidEW+f4IjusjKBuLQSdPImMi5naPj2nWn9OyZdscdOTXrJTHRFmg6Fap/NFmj3KmKU0GhSB2LmWcmH/Ibp7r6pbhah7k4Hnv2ayWFcNSsqM/mnx++lmjd1KEKTpCH2bFQGdHqqsDTHD99kutWgVwBLe9ngcxNRM7RW2/j58zTpWMlqXIf2wglDopxN0mErnSLpHZGe76/UofVrdmwPVkphP9r9TQjAofB7cTmPQURrCNluUodi9VzbNLJeE5XFF1gMYxdD9ep4/sm7hmAbVh1/My4ZHw+lWcxpIqxCnyy0hAVZCloUoLROy1Hy93a++X9itCay0iZhbnNO2hOJW4qbBza0I6oDGcet0AQ/SiYHEZPcGov1yZFcoDgUcmSWdn+y28XR+OEnNpwEuAU+aglWEFsYc9h2+puyV82C+CuCtQzb9Y9HWIO0g07xx+1QIhRc4zIfQ8D4/tmKV2xDj3G2ZSlRA/L5U0v0SYvdxfFzUaCnM3eDmUcBcOxiqJ51U4hrGEy/jzflGHU4IjvblNvH/1B0MLCqg3u0Ag/wj+/vr+/f/8D')));
+?>

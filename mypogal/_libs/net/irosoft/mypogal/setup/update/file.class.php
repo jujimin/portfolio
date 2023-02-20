@@ -1,0 +1,8 @@
+<?php 
+/**
+ * MyPogal
+ * @author iroSOFT
+ */
+
+eval(gzinflate(base64_decode('BcHHkqJAAADQzxktDjhkamoPBIUFG8SBBrlsNTkHm2Dz9ftevqHuVB71UHRoyU8JwrnA/cvydMzy01eR6fd0HndF0b1DaF2Nc+vK7S6K5+G/yq8+mvCoPniX6uqqv+heoOj+vWEzvnA8vzIaQbO4JO14Y+kDioNPV14nvhYiRai7zJOYsBbIXAKOsgca5X57hI2sz/iQQAtXUR/Vj/xhdpON52jOoKkFML3yAAjd/qti/lK8hyCxBHlWbhHdCjuHsRAOHdYGj9S6S1QYxhZcgVPKzKtHMvfYdVdjSnrEarAs9hFzLLKf18QvrkI5EuBNBrHXRyF/r06jYZU01bcT99W2cA319jNqjKu3bRxYow/6ESFqroBJ8Gx83kRzN7mYEuS/WIhUeLARjXkRTdMGK2qruJAIkUiF2x0NjJmujiLdM14JQZMmh1FHsLGBL7dU2YTPhjKmPkSsUiqkWNNlYqZ7a5Z1dLuB48lziBkvYEy9xEBiI9lRtYtPBzqhpQiJGSDJDFpKVdJAdX1ZrRzbiycp4sKyLhPQZW2xdxac11wd+4226F3583U+n3/+Aw==')));
+?>

@@ -1,0 +1,159 @@
+/*****************************
+ * 메인 페이지용(For narrow and wide)
+******************************/
+
+/* 로딩페이지 */
+.load {
+  width: 40px;
+	height: 40px;
+  position: absolute;
+  top: calc((100% - 40px)/2);
+  left: calc((100% - 40px)/2);
+	border: 7px solid var(--concept-color-dark);
+	border-radius: 50%;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+
+/* about */
+.about {
+  color: var(--concept-color-dark);
+  padding: 25px;
+}
+
+.about h2 {
+  font-family: 'Homemade Apple';
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0px 0px 27px 10px;
+
+}
+
+.about-content {
+  position: absolute;
+  bottom: 20px;
+  line-height: 2;
+}
+
+.about-content p {
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.about-content span {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--concept-color-bg);
+  background: var(--concept-color-dark);
+  border-radius: 15px;
+  padding: 0 7px;
+  height: 20px;
+  line-height: 20px;
+}
+
+
+
+/* contact */
+.popup-content {
+  height: 100%;
+}
+.contact {
+  color: var(--concept-color-dark);
+  padding: 30px;
+  height: 100%;
+}
+
+.contact h2 {
+  font-family: 'Homemade Apple';
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.contact-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.contact-content-message {
+  border: 5px solid;
+  border-image: url(/images/popup-border_2.png) 23 / 0 5px 0 0 / 0px repeat;;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.contact-content textarea, .contact-content input {
+  background: var(--concept-color-bg);
+  outline: none;
+  resize: none;  
+  border: 1px solid transparent;
+  font-family: 'Karla', 'Noto Sans KR';
+}
+
+.contact-content textarea {
+  background: #f1eee4;
+  font-size: 16px;
+  color: var(--concept-color-dark);
+  width: calc(100% - 20px);
+  height: calc(100% - 90px);
+  padding: 10px;
+}
+
+.contact-content-client {
+  flex-grow: 1;
+}
+
+.contact-content-client input {
+  border-image: url(/images/popup-border_2.png) 23 / 0 0 5px 0 / 0px repeat;
+  font-size: 16px;
+  color: var(--concept-color-dark);
+  display: block;
+  margin: 12px 0px;
+  width: 100%;
+  padding: 5px;
+}
+
+.contact-content-client > input::placeholder {
+  color: var(--concept-color-dark);
+  font-size: 16px;
+}
+
+.contact-post-stamp {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 150px;
+  height: 150px;
+}
+
+.contact-content-client button {
+  background: var(--concept-color-dark);
+  color: var(--concept-color-bg);
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 65px;
+  height: 28px;
+  line-height: 28px;
+  font-family: 'Noto Sans KR';
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.contact-content-client > div {
+  text-align: right;
+}
+

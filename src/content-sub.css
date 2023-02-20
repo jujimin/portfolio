@@ -1,0 +1,286 @@
+/*****************************
+ * 서브 페이지용(For narrow and wide)
+******************************/
+
+
+/* Works *********************************/
+
+/* 리스트 */
+
+.works-list {
+  padding: 0px;
+  margin: 0 10px;
+}
+
+.works-list-item {
+  display: flex;
+  gap: 20px;
+  border-bottom: 4px solid;
+  border-image: url(/images/popup-border_2.png) 23 / 0 0 4px 0 / 0px repeat;
+  padding: 30px 0px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.works-list-item:first-child {
+  padding-top: 0px;
+}
+
+.works-list-item-thumb {
+  flex-grow: 1;
+  flex-basis: 50%;
+  position: relative;
+}
+
+.works-list-item-thumb img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+  float: left;
+}
+
+.works-list-item .works-list-item-thumb a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--concept-color-main);
+  opacity: 0;
+  transition: 0.5s;
+}
+.works-list-item:hover .works-list-item-thumb a:after {
+  opacity: 0.7;
+}
+
+.works-list-item-info {
+  flex-grow: 1;
+  flex-basis: 50%;
+  position: relative;
+}
+
+.works-list-item-info > h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 0 10px -1px;
+}
+
+.works-list-item-info > p {
+  margin: 0 0 2px 0;
+  font-size: 14px;
+}
+
+.works-list-item-info a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.works-list-item-info > .summary {
+  position: absolute;
+  bottom: 5px;
+  margin: 0;
+}
+
+
+/* 페이지 넘버 */
+
+.paging {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mypogal-ui-paging-page, .mypogal-ui-paging-currentpage {
+  margin: 0 10px;
+}
+
+.mypogal-ui-paging-page > a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.mypogal-ui-paging-currentpage {
+  color: var(--concept-color-main);
+}
+
+
+/* Work Detail ***************************/
+.workdetail-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+  /* box-sizing: initial; */
+}
+
+/* content section */
+.workdetail-content-wrapper {
+  width: 30%;
+  height: 100vh;
+  font-size: 14px;
+  line-height: 1.6;
+  float: left;
+  overflow-y: auto;
+  padding-bottom: 40px;
+}
+
+.workdetail-title {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0 0 30px;
+  line-height: 1.1;
+}
+
+.workdetail-content {
+  margin: 0 0 100px;
+}
+
+.workdetail-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.workdetail-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.workdetail-info {
+  padding-left: 0;
+  margin: 0 0 50px;
+}
+.workdetail-info > li {
+  position: relative;
+  list-style: none;
+  border-bottom: 3px solid;
+  border-image: url(/images/popup-border_2.png) 23 / 0 0 3px 0 / 0px repeat;
+  margin-bottom: 10px;
+}
+
+.workdetail-info > li > span:nth-child(2) {
+  position: absolute;
+  right: 0;
+}
+
+
+/* image section */
+
+.workdetail-image-wrapper > div {
+  /* background: #EAEAEA; */
+  margin-bottom: 10px;
+}
+
+.workdetail-image-wrapper img {
+  /* max-width: 400px; */
+  width: 100%;
+  z-index: 10;
+}
+.workdetail-image-show {
+  position: fixed;
+}
+
+
+/* back 버튼 */
+
+.workdetail-command {
+  margin-bottom: 50px;
+}
+
+.workdetail-command button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Blog ***************************/
+
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 10px;
+  min-width: 300px;
+}
+
+.blog-list-item {
+  border-bottom: 4px solid;
+  border-image: url(/images/popup-border_2.png) 23 / 0 0 4px 0 / 0px repeat;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+}
+
+.blog-list-item-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.blog-list-item-title h2, .blog-list-item-title p {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-list-item-title h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.blog-list-item-title p {
+  flex-basis: 100px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.blog-list-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-list-item-summary {
+  font-size: 14px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s;
+  max-width: 700px;
+}
+
+.blog-list-item-summary p {
+  margin: 20px 0;
+}
+
+
+/* 다크모드 */
+
+body.darkmode .works-list-item {
+  border-image: url(/images/popup-border-lt.png) 23 / 0 0 4px 0 / 0px repeat;
+}
+body.darkmode .workdetail-info > li {
+  border-image: url(/images/popup-border-lt.png) 23 / 0 0 3px 0 / 0px repeat;
+}

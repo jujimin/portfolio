@@ -1,0 +1,474 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+body {
+	margin: 0;	
+}
+
+/**
+ * DB Error
+ */
+.dberror-title {
+	width: 100%; margin: 0 auto; background: #175593; color: #FFF; padding: 50px 0; text-align: center;
+}
+.dberror-info {
+	width: 600px; margin: 20px auto; line-height: 1.7;
+}
+
+/**
+ * SETUP
+ */
+.setup-title {
+	width: 100%; margin: 0 auto; padding: 20px 0; background: #175593; color: #FFF; text-align: center; overflow: hidden;
+}
+.setup-title > p {
+	font-size: 14px; color: #89e3f9;
+}
+.setup-form {
+	width: 500px; margin: 30px auto;
+}
+.setup-header {
+	margin: 0; border: 1px solid #CCC; padding: 10px; list-style-position: inside; line-height: 1.5;
+}
+.setup-fields {
+	line-height: 2;
+}
+.setup-fields input {
+	padding: 5px; font-size: 15px; font-weight: bold; border: 1px solid #CCC;
+}
+.setup-fields input[type=text] {
+	width: 100%;
+}
+.setup-fields input[type=password] {
+	width: 150px;
+}
+#btnSetup {
+	width: 100%; font-size: 16px; font-weight: bold; border: 3px outset #ff7b00; background: #ff7b00; color: #FFF;
+	padding: 5px; cursor: pointer; border-radius: 3px;
+}
+#btnSetup:hover {
+	border-style: inset;
+}
+
+.setupresult-title {
+	width: 100%; background: #666; color: #FFF; text-align: center; padding: 10px;
+}
+.commandbar {
+	text-align: center;
+}
+
+
+/**
+ * Update
+ */
+.update-body {
+	width: 550px; margin: 50px auto; text-align: center;
+}
+#btnUpdate {
+	width: 100%; font-size: 16px; font-weight: bold; border: 3px outset #ff7b00; background: #ff7b00; color: #FFF;
+	padding: 5px; cursor: pointer; border-radius: 3px;
+}
+#btnUpdate:hover {
+	border-style: inset;
+}
+
+
+.jquidialog-hide-titlebar .ui-dialog-titlebar {
+	display: none;
+}
+.jquidialog-mypogal-titlebar {
+	border-style: none;
+}
+.jquidialog-mypogal-titlebar .ui-widget-header {
+	border-style: none; background: none;
+}
+.jquidialog-mypogal-titlebar .ui-dialog-title {
+	color: #000 !important;
+}
+.jquidialog-mypogal-titlebar h2 {
+	margin: 0; color: #000 !important;
+}
+
+/**
+ * Login
+ */
+#fLogin {
+    width: 500px; margin: 50px auto; min-height: 500px; text-align: center;
+}
+#fLogin h3 {
+    border-bottom: 1px dotted #CCC; color: #FFF; padding: 20px; margin: 0;
+    background-color: #d478db;
+}
+#fLogin table th {
+	text-align: right;
+}
+#fLogin table {
+    width: 270px; margin: 20px auto;
+}
+#fLogin table td {
+    padding: 3px 0px;
+}
+#fLogin input {
+    border: 1px solid #CCC; width: 150px; height: 23px;
+}
+#fLogin #btnLogin {
+	width: 100%; height: 30px; font-size: 15px;
+}
+#message { color: red; height: 30px; text-align: right; }
+
+
+/**
+ * Header
+ */
+.header {
+	top: 0; left: 0; right: 0; background: #175593; color: #FFF; text-align: center; position: fixed; z-index: 9; display: table; width: 100%;
+}
+.header-inner {
+	display: table-cell; height: 100px; vertical-align: bottom; text-align: left;
+}
+.header-inner > h2 {
+	margin: 0; margin-left: 170px;
+}
+.header-inner > h2 > sup {
+	margin-left: 5px; font-style: italic; color: #f4ea9a; font-weight: normal; font-size: 14px;
+}
+.header-menubar {
+	margin: 0; padding: 0; list-style: none; margin-top: 20px; padding-left: 170px;
+}
+.header-menubar > li {
+	display: inline-block; padding: 5px 20px; color: #FFF;
+}
+.header-menubar > li > a {
+	color: #FFF;
+}
+.header-menubar > li > a:link, .header-menubar > li > a:visited {
+	text-decoration: none; font-size: 20px; font-weight: bold;
+}
+.header-menubar > li.select {
+	background: #FFF;
+}
+.header-menubar > li.select a {
+	color: #000 !important;
+}
+.header-right {
+	position: absolute; right: 10px; top: 10px; text-align: right;
+}
+.header-right > #btnLogout {
+	cursor: pointer;
+}
+.header-right > #btnLogout > h4 {
+	margin: 10px;
+}
+.header-copyright {
+	position: absolute; bottom: 3px; right: 10px;
+}
+.header-copyright > span {
+	margin-left: 2px; font-style: italic;
+}
+
+
+/**
+ * Body
+ */
+.body {
+	margin-top: 100px;
+}
+
+/**
+ * Body-Content
+ */
+.body-content {
+	overflow: hidden;
+}
+.body-content-sidebar,
+.body-manual-sidebar,
+.body-board-sidebar {
+	position: fixed; width: 170px; height: 100vh; list-style: none; margin: 0; padding: 0; padding-left: 20px; padding-top: 50px;
+	margin-right: 40px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#175593+0,60abf8+22,60abf8+22,eaeaea+100 */
+background: #175593; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE3NTU5MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIyJSIgc3RvcC1jb2xvcj0iIzYwYWJmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIyJSIgc3RvcC1jb2xvcj0iIzYwYWJmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWVhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #175593 0%, #60abf8 22%, #60abf8 22%, #eaeaea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #175593 0%,#60abf8 22%,#60abf8 22%,#eaeaea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #175593 0%,#60abf8 22%,#60abf8 22%,#eaeaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175593', endColorstr='#eaeaea',GradientType=0 ); /* IE6-8 */
+	
+}
+.body-content-sidebar > li,
+.body-manual-sidebar > li,
+.body-board-sidebar > li {
+	margin: 20px 0; padding: 10px; text-align: center;
+}
+.body-content-sidebar > li:last-child,
+.body-manual-sidebar > li:last-child,
+.body-board-sidebar > li:last-child {
+	margin-bottom: 300px;
+}
+.body-content-sidebar > li > a:link, .body-content-sidebar > li > a:visited,
+.body-manual-sidebar > li > a:link, .body-manual-sidebar > li > a:visited,
+.body-board-sidebar > li > a:link, .body-board-sidebar > li > a:visited {
+	font-size: 20px; font-weight: bold; color: #FFF; text-decoration: none;
+} 
+.body-content-sidebar > li.select,
+.body-manual-sidebar > li.select,
+.body-board-sidebar > li.select {
+	border: 1px solid #CCC; border-right-color: #FFF; margin-right: -1px; background: #FFF;
+}
+.body-content-sidebar > li.select > a:link,
+.body-content-sidebar > li.select > a:visited,
+.body-manual-sidebar > li.select > a:link,
+.body-manual-sidebar > li.select > a:visited,
+.body-board-sidebar > li.select > a:link,
+.body-board-sidebar > li.select > a:visited {
+	color: #000;
+}
+.body-content-main,
+.body-manual-main,
+.body-board-main {
+	margin-left: 200px; padding-top: 30px;
+}
+
+
+.manage-list {
+	width: 100%;
+	max-width: 1200px;
+	border-collapse: collapse;
+}
+.manage-list > caption {
+	text-align: right; margin-bottom: 5px;
+}
+.manage-list > caption > button {
+	cursor: pointer;
+}
+.manage-list > caption > button > * {
+	margin: 3px 10px;
+}
+.manage-list > caption > input {
+	font-size: 16px; font-weight: bold; padding: 3px;
+}
+.manage-list > tbody > tr {
+	border: 1px solid #CCC;	border-left-style: none; border-right-style: none;
+}
+.manage-list > tbody td button > h4 {
+	margin: 0;
+}
+.manage-list > tbody td.buttons {
+	width:  60px;
+}
+
+/**
+ * 그룹 관리
+ */
+.manage-content-groups-list > tbody th > span {
+	color: #CCC; font-size: 13px; font-style: italic; margin-right: 5px;
+}
+
+/**
+ * 분류 관리
+ */
+.manage-content-categories-list > tbody > tr {
+	cursor: move;
+}
+.manage-content-categories-list > tbody  td.category {
+	color: orange; width: 150px;
+}
+.manage-content-categories-list > tbody  th {
+	text-align: left;
+}
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+
+/**
+ * Meta
+ */
+.manage-content-meta-list > caption input {
+	padding: 8px;
+}
+
+/*
+ * 콘텐츠
+ */
+.manage-content-list {
+	width: 100%; max-width: 1100px; border-collapse: collapse;
+}
+.manage-content-list th, .manage-content-list td {
+	border: 1px solid #CCC; border-left-color: #FFF; border-right-color: #FFF;
+}
+.manage-content-list th {
+	background: #666; color: #FFF; padding: 5px 0;
+}
+.manage-content-list > tbody > tr:hover {
+	background: #fcf9c2;
+}
+.manage-content-list-thumbnail {
+	width: 60px; text-align: center;
+}
+.manage-content-list-title span {
+	color: orange;
+}
+.manage-content-list-title-cno {
+	color: #CCC !important; font-size: 13px; font-style: italic;
+}
+.manage-content-list-thumbnail > div {
+	display: inline-block; width: 50px; height: 50px; overflow: hidden; border: 1px solid #EAEAEA;	
+}
+.manage-content-list-group, .manage-content-list-category, .manage-content-list-command {
+	width: 100px;
+}
+.manage-content-list-category {
+	color: #00b6ff;
+}
+.manage-content-list-registered {
+	width: 100px; color: #999;
+}
+.manage-content-list-command {
+	text-align: center;
+}
+.manage-content-list-hits {
+	text-align: right;
+}
+.manage-content-list-command > button {
+	cursor: pointer;
+}
+.manage-content-list > tfoot td {
+	text-align: center; padding: 5px; background: #EAEAEA;
+}
+.manage-content-list > tfoot span {
+	display: inline-block; padding: 3px; border: 1px solid #CCC; border-radius: 2px; margin: 0 3px;
+}
+
+/*
+ * POST
+ */
+#fContentRegister dl {
+	line-height: 25px;
+}
+#fContentRegister input.full {
+	padding: 3px; font-size: 16px; width: 100%; max-width: 800px;
+}
+
+/**
+ * Contact
+ */
+.manage-contact-list-no {
+	width: 50px;
+}
+.manage-contact-list-command {
+	width: 100px; text-align: center;
+}
+.manage-contact-list-registered {
+	width: 120px;
+}
+.manage-contact-list-writer {
+	width: 100px;
+}
+.manage-contact-list-state {
+	width: 50px; text-align: center;
+}
+.manage-contact-list-state-new {
+	color: orange;
+}
+.manage-contact-list-state-ok {
+	color: blue;
+}
+
+.detail-contact-fields {
+	line-height: 27px;
+}
+.detail-contact-fields > dt {
+	color: #CCC;
+}
+
+/**
+ * 메뉴얼
+ */
+.manual-tutorials-list-no {
+	width: 50px; white-space: nowrap;
+}
+.manual-tutorials-list-rdate {
+	width: 180px; color: #999;
+}
+.manual-tutorials-list-readed {
+	color: #ff9d00; white-space: nowrap;
+}
+.manual-tutorials-list-title > a:link, .manual-tutorials-list-title > a:visited {
+	text-decoration: none; color: #000;
+}
+
+
+/**
+ * 알림판
+ */
+.board-news-list-rdate {
+	width: 180px; color: #999;
+}
+.board-news-list-type {
+	width: 200px; color: #ff9d00; white-space: nowrap; text-align: left;
+}
+.board-news-list-readed {
+	color: #ff9d00; white-space: nowrap;
+}
+.board-news-list-title > a:link, .board-news-list-title > a:visited {
+	text-decoration: none; color: #000;
+}
+
+/**
+ * 공통 사이드바
+ */
+.common-sidebar {
+	position: fixed; left: 20px; bottom: 20px; z-index: 99; list-style: none; margin: 0; padding:0;
+}
+.common-sidebar > li.banner {
+	background: #FFF; color: #000; padding: 5px 10px; margin: 2px 0; border-radius: 3px; transition: background-color 0.5s;
+}
+.common-sidebar > li > a {
+	display: inline-block; width: 100%; height: 100%;
+}
+.common-sidebar > li.banner:hover {
+	background-color: #038aaf; color: #FFF;
+}
+.common-sidebar > li.banner:hover > a {
+	color 0.5s;
+}
+.common-sidebar > li.banner > a:link, .common-sidebar > li.banner > a:visited {
+	text-decoration: none; color: #666;
+}
+.common-sidebar > li.banner > a:hover, .common-sidebar > li.banner:hover > a {
+	color: #FFF;
+}
+
+.common-sidebar li > h4, .common-sidebar li > h5 {
+	margin: 5px 0; text-align: left;
+}
+.common-sidebar > li > ul {
+	list-style: none; margin: 0; margin-bottom: 10px; padding: 0;
+}
+.common-sidebar > li > ul > li {
+	color: #FFF; padding-left: 10px;
+}
+.common-sidebar li > h4 {
+	border-bottom: 1px dotted #175593; color: #175593; padding: 2px 0; border-radius: 3px;
+}
+.common-sidebar li > h5 {
+	color: #666; border-bottom: 1px dotted #CCC; padding-bottom: 2px; margin-bottom: 3px; margin-left: -10px;
+}
+
+
+/**
+ * jQuery UI Tooltip
+ */
+.ui-tooltip {
+	border-style: none; background: #000; color: #FFF;
+}
+
+.custom-tooltip {
+	border-style: none; padding: 0 !important; margin: 0 !important; background: #FFF; color: #000;
+}
+.custom-tooltip h4 {
+	margin: 10px;
+}
+
+.ui-selectmenu-button {
+	vertical-align: middle;
+}

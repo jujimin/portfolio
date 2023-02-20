@@ -1,0 +1,316 @@
+/*****************************
+ * 초기화용(For narrow and wide)
+******************************/
+
+
+/* 웹폰트 정의 *****************************/
+/* from Google */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+/* 직접 정의 */
+/* @font-face {
+  font-family: NanumGothicExtraBold;
+  src: url('/webfonts/NanumGothic/NanumGothicExtraBold.woff') format('woff');
+} */
+
+/* 변수 값 정의 ****************************/
+:root {
+  --concept-color-main: #efd348;
+  --concept-color-dark: #6d693b;
+  --concept-color-bg: #fcfaf1;
+}
+
+/* 초기화 *********************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Karla', 'Noto Sans KR';
+  color: var(--concept-color-dark);
+  background: var(--concept-color-bg);
+  overflow-x: hidden;
+}
+
+
+/* narrow와 wide에서 공통으로 필요한 코드 ******/
+
+.header-wrapper,
+.main-wrapper,
+.footer-wrapper {
+  width: 100%;
+}
+
+/* header 영역 ***************************/
+.header {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+  position: relative;
+}
+
+/* 홈버튼 */
+.home-btn {
+  width: 40px;
+  height: 75px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  z-index: 10;
+}
+
+.home-btn-close {
+  display: block;
+}
+.home-btn-open {
+  display: none;
+}
+
+.homebtn-color {
+  fill: var(--concept-color-bg);
+}
+.homebtn-stroke {
+  fill: var(--concept-color-main);
+}
+
+.works-title {
+  font-family: 'Homemade Apple';
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.works-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-title {
+  font-family: 'Homemade Apple';
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  margin: 0 0 80px;
+}
+
+.blog-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 카테고리 */
+
+.works-categories {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.works-categories > li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.works-categories > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.works-apply-category {
+  color: var(--concept-color-main);
+}
+
+
+
+/* main 영역 ***************************/
+.main {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+.main-svg {
+  width: 100%;
+  max-width: calc(100vh - 150px);
+  min-width: 500px;
+  padding: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.main-svgheight-center {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dialog-menu, .motion-menu {
+  cursor: pointer;
+}
+
+.popup {
+  border: 6px solid;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: scale(0) translate(-50%, -50%)
+            perspective(500px) rotateX(60deg);
+  background: var(--concept-color-bg);
+  border-image: url(/images/popup-border_2.png) 23 / 2% 1% / 3px repeat;
+  transition: transform 0.5s;
+  z-index: 10;
+}
+
+.popup-about-show {
+  width: 100%;
+  height: 250px;
+  /* width: calc(100vw - 40%); */
+  /* height: calc((100vw - 40%) / 2); */
+  max-width: 400px;
+  transform: scale(1) translate(-50%, -50%);
+}
+
+.popup-contact-show {
+  width: calc(100vw - 20%);
+  height: calc(100vh - 50%);
+  max-width: 750px;
+  min-height: 400px;
+  transform: scale(1) translate(-50%, -50%);
+}
+
+.popup-close {
+  transform: scale(0)
+            translate(-50%, -50%)
+            perspective(500px) rotateX(40deg) !important; 
+}
+
+.popup-close-btn {
+  width: 45px;
+  position: absolute;
+  top: -55px;
+  right: -15px;
+  cursor: pointer;
+
+}
+.footer-wrapper {
+  position: fixed;
+  bottom: 0px;
+  padding: 30px 0 30px;
+  background: linear-gradient(to top, rgba(252,250,241,1) 0%, rgba(252,250,241,0) 83%, rgba(252,250,241,0) 100%);
+}
+
+.footer {
+  text-align: center;
+  color: var(--concept-color-dark);
+  margin: auto;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0px;
+}
+
+/* 툴팁 */
+.menu-help-wrap {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  background: var(--concept-color-dark);
+  color: var(--concept-color-bg);
+  text-align: center;
+  line-height: 30px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.menu-help::before {
+  content: attr(data-label);
+}
+.menu-help::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: calc(100% - 5px);
+  left: calc(50% - 5px);
+  background: var(--concept-color-dark);
+  transform: rotate(45deg);
+}
+
+/* 메인 아트워크 svg 클래스 */
+
+.st0 {fill:#FCFAF1;}
+.st1 {fill:#6d693b; }
+.menu-color {fill:#f9e462;}
+.stamp-color {fill: #6d693b;}
+
+
+/* 다크모드 */
+body.darkmode,
+body.darkmode .st0,
+body.darkmode .menu-color,
+body.darkmode .closebtn-fill-color,
+body.darkmode .popup,
+body.darkmode .popup .contact .contact-content input {
+  background: var(--concept-color-dark);
+}
+
+body.darkmode,
+body.darkmode .popup,
+body.darkmode .popup .about,
+body.darkmode .popup .contact,
+body.darkmode .popup .contact .contact-content textarea::placeholder, 
+body.darkmode .popup .contact .contact-content input::placeholder,
+body.darkmode .popup .contact .contact-content input,
+body.darkmode .footer {
+  color: var(--concept-color-bg);
+}
+
+body.darkmode .st0,
+body.darkmode .menu-color,
+body.darkmode .closebtn-fill-color,
+body.darkmode .homebtn-color {
+  fill: var(--concept-color-dark);
+  color: var(--concept-color-dark);
+}
+
+body.darkmode .st1,
+body.darkmode .closebtn-stroke-color,
+body.darkmode .stamp-color {
+  fill: var(--concept-color-bg);
+  color: var(--concept-color-bg);
+}
+
+body.darkmode .menu-help-wrap,
+body.darkmode .menu-help-wrap::after,
+body.darkmode .popup .contact .contact-content-client button,
+body.darkmode .popup .about .about-keyword span {
+  background: var(--concept-color-bg);
+  color: var(--concept-color-dark);
+}
+
+body.darkmode .contact-content textarea {
+  background: #7a7645;
+}
+
+body.darkmode .popup {
+  border-image: url(/images/popup-border-lt.png) 23 / 2% 1% / 3px repeat;
+}
+
+body.darkmode .contact-content-message {
+  border-image: url(/images/popup-border-lt.png) 23 / 0 5px 0 0 / 0px repeat;;
+}
+
+body.darkmode .contact-content-client input {
+  border-image: url(/images/popup-border-lt.png) 23 / 0 0 5px 0 / 0px repeat;
+}
+
+body.darkmode .footer-wrapper {
+  background: linear-gradient(to top, rgba(109,105,59,1) 0%, rgba(109,105,59,0) 80%, rgba(109,105,59,0) 100%);
+}

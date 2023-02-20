@@ -1,0 +1,57 @@
+/*****************************
+ * 메인 페이지용(For narrow)
+******************************/
+
+
+/* about */
+
+.about h2 {
+  font-size: 30px;
+}
+
+.about-content {
+  line-height: 1.5;
+}
+
+.about-keyword {
+  margin-top: 6px;
+}
+
+.about-contact {
+  margin-top: 12px;
+}
+
+.about-contact p {
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+
+/* contact */
+.contact h2 {
+  font-size: 30px;
+}
+.contact-content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content-message {
+  border-image: url(/images/popup-border_2.png) 23 / 0 0 5px 0 / 0px repeat;;
+  width: 100%;
+}
+.contact-content-client {
+  width: 100%;
+}
+.contact-content textarea {
+  width: 100%;
+}
+
+.contact-post-stamp {
+  width: 120px;
+}
+
+/* 다크모드 */
+body.darkmode .contact-content-message {
+  border-image: url(/images/popup-border-lt.png) 23 / 0 0 5px 0 / 0px repeat;;
+}

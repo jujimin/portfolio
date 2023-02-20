@@ -1,0 +1,45 @@
+/*****************************
+ * 서브 페이지용(For narrow)
+******************************/
+
+
+/* Works *********************************/
+
+.works-list-item {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.works-list-item-info > h2 {
+  font-size: 22px;
+  margin: 0 0 5px -1px;
+}
+
+.works-list-item-info > p {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.works-list-item-info > .summary {
+  display: block;
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+}
+
+
+/* Work Detail ***************************/
+
+.workdetail-content-wrapper {
+  float: none;
+  position: static;
+  height: auto;
+}
+
+.workdetail-content {
+  margin: 0 0 50px;
+}
+
+
+
+/* Contact *******************************/
